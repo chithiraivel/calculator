@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<style>
+		.one{
+
+			border: 1px solid gray;
+			width: 400px;
+			height: 500px;
+			background-color:lightskyblue;
+
+		}
+		.one1{
+			border: 1px solid gray;
+			width: 250px;
+			height: 60px;
+			margin-left:70px;
+			margin-top: 30px;
+			background-color: white;
+
+		}
+		button{
+			width: 50px;
+			height: 50px;
+			margin-left: 30px;
+			margin-top: 30px;
+		}
+		.one2{	
+			background-color: gray ;
+		}
+		button:hover{
+			background-color:green;
+		}
+	</style>
+</head>
+<body>
+	<script src="calculator.js"></script>
+	<div>
+		<div class="one">
+			
+			<div  >
+				<input type="text" name="number" class="one1" id="calc" placeholder="0" readonly>
+			</div>
+			
+			<div>
+				<button class="one2" onclick="operator('*')" id="*">*</button>
+				<button class="one2" onclick="clearentry()" id="Delete">CE</button>
+				<button class="one2" onclick="clear1()" id="Escape">C</button>
+				<button class="one2" onclick="backspace()" id="Backspace">X</button>
+			</div>
+			<div>
+				<button onclick="number(9)" id="9">9</button>
+				<button  onclick="number(8)" id="8">8</button>
+				<button onclick="number(7)" id="7">7</button>
+				<button class="one2" onclick="operator('+')" id="+">+</button>
+			</div>
+			<div>
+				<button onclick="number(6)" id="6">6</button>
+				<button onclick="number(5)" id="5">5</button>
+				<button onclick="number(4)" id="4">4</button>
+				<button class="one2" onclick="operator('-')" id="-">-</button>
+			</div>
+			<div>
+				<button onclick="number(3)" id="3">3</button>
+				<button onclick="number(2)" id="2">2</button>
+				<button onclick="number(1)" id="1">1</button>
+				<button class="one2" onclick="operator('%')" id="%">%</button>
+			</div>
+			<div>
+				<button onclick="operator('.')" id=".">.</button>
+				<button onclick="number(0)" id="0">0</button>
+				<button type="button" onclick="result()">=</button>
+				<button  class="one2" onclick="operator('/')" id="/">/</button>
+			</div>
+
+
+
+
+
+			
+		</div>
+	</div>
+</table>
+</body>
